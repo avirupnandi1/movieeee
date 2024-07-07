@@ -54,16 +54,10 @@ class WeAppBar extends PreferredSize {
                       )
                     ],
                   ),
-                  Container(
-                    decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(24))),
-                    child: Image.asset(
-                      "assets/images/welogo.png",
-                      height: 32,
-                      width: 32,
-                    ),
-                  ),
+                CircleAvatar(
+  radius: 19,
+  backgroundImage: AssetImage("assets/we.png"),
+)
                 ],
               ),
               bottom: PreferredSize(

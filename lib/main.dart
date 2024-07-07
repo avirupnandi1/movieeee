@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localized_locales/flutter_localized_locales.dart';
+import 'package:myapp/presentation/screen/dashboard.dart';
 import 'package:myapp/presentation/screen/splashscreen.dart';
 
 void main() {
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => const SplashScrn(),
+          '/dashboard': (context) => const DashboardPage(),
        
       },
     );

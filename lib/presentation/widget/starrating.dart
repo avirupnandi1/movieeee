@@ -16,7 +16,7 @@ class StarRating extends StatelessWidget {
         const SizedBox(
           width: 4,
         ),
-        SvgPicture.asset('assets/images/star.svg',
+        SvgPicture.asset('assets/star.svg',
             height: 12,
             colorFilter:
                 const ColorFilter.mode(Colors.yellowAccent, BlendMode.srcIn))
