@@ -1,20 +1,20 @@
-buildscript {
-    ext.kotlin_version = '1.8.20'
-     ext.agp_version = '7.4.2' 
-    repositories {
-        google()
-        mavenCentral()
-    }
+// buildscript {
+//     ext.kotlin_version = '1.8.20'
+//      ext.agp_version = '7.4.2' 
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
 
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-         classpath "com.android.tools.build:gradle:$agp_version"
-    }
-}
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-}
+//     dependencies {
+//         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//          classpath "com.android.tools.build:gradle:$agp_version"
+//     }
+// }
+// plugins {
+//     id 'com.android.application'
+//     id 'org.jetbrains.kotlin.android'
+// }
 
 allprojects {
     repositories {
@@ -40,9 +40,9 @@ subprojects {
     afterEvaluate { project ->
         if (project.hasProperty("android")) {
             android {
-                compileSdkVersion 33
+                compileSdkVersion 34
                 defaultConfig {
-                    targetSdkVersion 33
+                    targetSdkVersion 34
                 }
             }
         }
